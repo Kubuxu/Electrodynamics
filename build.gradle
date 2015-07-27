@@ -33,7 +33,6 @@ allprojects {
 			"18" {
 				wrapper "nova.wrapper.mc18:NovaWrapper-MC1.8:0.1-SNAPSHOT"
 				runtime "nova.minecraft.wrapper.mc18:NovaMinecraft-Wrapper-MC1.8:0.0.1-SNAPSHOT"
-				runtime project(":optics")
 			}
 		}
 	}
@@ -53,12 +52,6 @@ allprojects {
 subprojects {
 	dependencies {
 		compile project(":")
-	}
-}
-
-project(":optics") {
-	dependencies {
-		compile project(":electric")
 	}
 }
 
